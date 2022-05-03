@@ -12,7 +12,6 @@ const GridColumn = ({ children }: GridColumnProps) => {
       direction="column"
       xs={4}
       style={{
-        padding: "1rem",
         height: "90vh",
       }}
       alignItems="stretch"

@@ -4,6 +4,8 @@ import GridColumn from "./components/GridColumn";
 import GridContainer from "./components/GridContainer";
 import GridRow from "./components/GridRow";
 import Header from "./components/Header";
+import SectionContainer from "./components/SectionContainer";
+import RandomPokemon from "./components/sections/RandomPokemon";
 
 function App() {
   return (
@@ -12,32 +14,34 @@ function App() {
       <GridContainer>
         <GridColumn>
           <GridRow size={6}>
-            <div style={{ border: "1px solid #000", height: "100%" }} />
+            <SectionContainer>Google Calendar</SectionContainer>
           </GridRow>
           <GridRow size={6}>
-            <div style={{ border: "1px solid #000", height: "100%" }} />
+            <SectionContainer>Gmail</SectionContainer>
           </GridRow>
         </GridColumn>
         <GridColumn>
           <GridRow size={3}>
-            <div style={{ border: "1px solid #000", height: "100%" }} />
+            <SectionContainer>IDK</SectionContainer>
           </GridRow>
           <GridRow size={5}>
-            <div style={{ border: "1px solid #000", height: "100%" }} />
+            <SectionContainer>Spotify</SectionContainer>
           </GridRow>
           <GridRow size={2}>
-            <div style={{ border: "1px solid #000", height: "100%" }} />
+            <SectionContainer>Programming Quote</SectionContainer>
           </GridRow>
           <GridRow size={2}>
-            <div style={{ border: "1px solid #000", height: "100%" }} />
+            <SectionContainer>Date / Time / Weather</SectionContainer>
           </GridRow>
         </GridColumn>
         <GridColumn>
-          <GridRow size={6}>
-            <div style={{ border: "1px solid #000", height: "100%" }} />
+          <GridRow size={4}>
+            <SectionContainer>GitHub</SectionContainer>
           </GridRow>
-          <GridRow size={6}>
-            <div style={{ border: "1px solid #000", height: "100%" }} />
+          <GridRow size={8}>
+            <SectionContainer>
+              <RandomPokemon />
+            </SectionContainer>
           </GridRow>
         </GridColumn>
       </GridContainer>
