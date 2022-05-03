@@ -7,6 +7,7 @@ import Header from "./components/Header";
 import SectionContainer from "./components/SectionContainer";
 import ProgrammingQuote from "./components/sections/ProgrammingQuote";
 import RandomPokemon from "./components/sections/RandomPokemon";
+import DateTimeWeather from "./components/sections/DateTimeWeather";
 
 function App() {
   return (
@@ -36,7 +37,11 @@ function App() {
             </SectionContainer>
           </GridRow>
           <GridRow size={2}>
-            <SectionContainer>Date / Time / Weather</SectionContainer>
+            <SectionContainer
+              styles={{ display: "flex", alignItems: "center" }}
+            >
+              <DateTimeWeather />
+            </SectionContainer>
           </GridRow>
         </GridColumn>
         <GridColumn>
