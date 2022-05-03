@@ -5,6 +5,7 @@ import GridContainer from "./components/GridContainer";
 import GridRow from "./components/GridRow";
 import Header from "./components/Header";
 import SectionContainer from "./components/SectionContainer";
+import ProgrammingQuote from "./components/sections/ProgrammingQuote";
 import RandomPokemon from "./components/sections/RandomPokemon";
 
 function App() {
@@ -28,7 +29,11 @@ function App() {
             <SectionContainer>Spotify</SectionContainer>
           </GridRow>
           <GridRow size={2}>
-            <SectionContainer>Programming Quote</SectionContainer>
+            <SectionContainer
+              styles={{ display: "flex", alignItems: "center" }}
+            >
+              <ProgrammingQuote />
+            </SectionContainer>
           </GridRow>
           <GridRow size={2}>
             <SectionContainer>Date / Time / Weather</SectionContainer>

@@ -22,14 +22,11 @@ const RandomPokemon = () => {
       const pokemon = Convert.toPokemon(data);
       setPokemon(pokemon);
       setLoading(false);
-
-      console.log("Pokemon:", pokemon);
     };
     fetchPokemon();
   }, []);
 
   const formatPokemonValue = (value: any) => {
-    console.log("Value:", value);
     var valueList = value.split("-");
 
     for (var i = 0; i < valueList.length; i++) {
